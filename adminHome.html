@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Holy Shivana Template">
+    <meta name="keywords" content="Holy Shivana, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holy Shivana</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminDashboard.css" type="text/css">
+    <link rel="stylesheet" href="css/roomBooking.css" type="text/css">
+    <link rel="stylesheet" href="css/css-bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/css-flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/css-jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/css-slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-style.css" type="text/css">
+  </head>
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+      <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="canvas-close">
+        <i class="icon_close"></i>
+      </div>
+      <div class="search-icon  search-switch">
+        <i class="icon_search"></i>
+      </div>
+      <div class="header-configure-area">
+        <a href="#" class="bk-btn">Book Now</a>
+      </div>
+
+      <!-- for phone menu  -->
+      <nav class="mainmenu mobile-menu">
+        <ul>
+         
+          <li >
+            <a href="adminDashboard.html">Rooms</a>
+        </li>
+        <li  class="active" >
+          <a href="adminHome.html">AdminHome</a>
+        </li>
+      
+     
+        </ul>
+      </nav>
+
+      <div id="mobile-menu-wrap"></div>
+      <ul class="top-widget">
+  
+    </div>
+    <header class="header-section">
+    
+      <div class="menu-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="logo" style="padding:0px !important">
+                <a href="adminHome.html">
+                  <img src="images/logo/The-2 (1).png" alt="" style="width: 85px">
+                </a>
+              </div>
+            </div>
+            <!-- for main manu -->
+            <div class="col-lg-10">
+              <div class="nav-menu">
+                <nav class="mainmenu">
+                  <ul>
+                    <li >
+                      <a href="adminDashboard.html">Rooms</a>
+                    </li>
+                    <li class="active" >
+                      <a href="adminHome.html">Add Reservation</a>
+                    </li>
+              
+                  </ul>
+                </nav>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+        <div class="container" class="booking-form">
+          <h5 style="text-align: center;" class="brand">Add New Reservation </h5></br>
+          <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+              <h3>Holy Shivana</h3>
+              <ul>
+                <li><i class="fa fa-mobile"></i>(555)-555-5555</li>
+                <li><i class="fa fa-envelope"></i>test@email.com</li>
+              </ul>
+            </div>
+            <div class="contact">
+          
+              <form id ="booking-form">
+
+                <div class="check-date">
+                  <div style="position: relative;">
+                  <label for="Arrival Date" >Arrival Date:</label>
+                  <input type="text" class="date-input" id="Arrival Date" required >
+                  <i style="position: absolute; right: 20px; bottom: 15px;" class="icon_calendar" ></i>
+                
+                  </div>
+                  </div>
+
+                  <div class="check-date">
+                      <div style="position: relative;">
+                      <label for="Departure Date" >Departure Date:</label>
+                      <input type="text" class="date-input" id="Departure Date"  required >
+                      <i style="position: absolute; right: 20px; bottom: 15px;" class="icon_calendar"  ></i>
+                    
+                      </div>
+                      </div>
+                      <p>
+                        <label>Number Of Room:</label>
+                        <input type="text" name="rooms" id ="rooms" required>
+                    
+                      </p>
+
+                      <p class="full">
+                        <button type = "button" id="check-btn">check Room</button>
+                      </p>
+
+                      <p>
+                      
+                        <label for="roomNumber">Room Number:</label>
+                        <select id="roomNumber" required>
+                          <option value="">Select Room Number</option>
+                        </select>
+                      </p>
+            
+                     
+                <p>
+                  <label>Full Name</label>
+                  <input type="text" name="name" id ="name" required>
+                </p>
+             
+    
+                <p>
+                  <label>Email:</label>
+                  <input type="email" id="email" name="email" required >
+                </p>
+              
+              
+    
+                <div class="check-date">
+                    <div style="position: relative;">
+                    <label for="Room Price" >₹ Amount:</label>
+                    <input type="text"  id="Room-Price" required >
+                    <i style="position: absolute; right: 20px; bottom: 15px;">₹</i>
+                  
+                    </div>
+                    </div>
+
+                   
+                        
+                
+                <p class="full">
+                  <button type = "submit" id="booking-btn">Add Reservation </button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+         
+        
+        </section>
+
+  
+<footer class="footer-section">
+  <div class="container">
+  <div class="footer-text">
+  <div class="row">
+  <div class="col-lg-4">
+  <div class="ft-about">
+  <div class="logo">
+  <a href="#">
+  <img src="images/logo/Footer-logo.png" alt="" style ="margin-top: -62px;">
+  </a>
+  </div>
+  <p>Make your Visit great !</p>
+  <div class="fa-social">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-tripadvisor"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube-play"></i></a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3 offset-lg-1">
+  <div class="ft-contact">
+  <h6>Contact Us</h6>
+  <ul>
+    <li><a href="tel:+917060293898"> +917060293898</a></li>
+  <a href="mailto:holyshivanarishikesh@gmail.com">holyshivanarishikesh@gmail.com</a>
+  <li>Tapovan,Rishikesh,Uttarakhand, India</li>
+   </ul>
+  </div>
+  </div>
+  <div class="col-lg-3 offset-lg-1">
+  <div class="ft-newslatter">
+  <h6>New latest</h6>
+  <p>Get the latest updates and offers.</p>
+  <form action="#" class="fn-form">
+  <input type="text" placeholder="Email">
+  <button type="submit"><i class="fa fa-send"></i></button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="copyright-option">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-7">
+  
+  </div>
+  <div class="col-lg-5">
+  <div class="co-text"><p>
+  Copyright &copy;<script data-cfasync="false" src="js/cloudflare-static-email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved Holy Shivana
+  </p></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </footer>
+
+    <script src="js/verifyUser.js" > </script>
+  
+
+    <script>
+
+const arrivalDateInput = document.getElementById("Arrival Date");
+const departureDateInput = document.getElementById("Departure Date");
+const room = document.getElementById("rooms")
+const checkRoomButton = document.getElementById("check-btn");
+
+// Add an event listener to the Check Room button
+checkRoomButton.addEventListener("click", () => {
+  // Get the values of the Arrival Date and Departure Date inputs
+  const arrivalDate = arrivalDateInput.value;
+  const departureDate = departureDateInput.value;
+  const Rooms= room.value;
+  const formData = new FormData();
+
+  formData.append("CheckIn",arrivalDate)
+  formData.append("CheckOut",departureDate)
+  formData.append("room" ,Rooms)
+  // Construct the URL for the backend endpoint
+  const endpoint = "http://localhost:8080/api/v1/checkAvailability"
+
+  fetch(endpoint, {
+  method: "post",
+  body: formData,
+})
+  .then((response) => response.json())
+  .then((data) => {
+    if (data.status === 201) {
+      const roomNumberSelect = document.getElementById("roomNumber");
+      data.Rooms.forEach((room) => {
+        const option = document.createElement("option");
+        option.value = room.roomNumber;
+        option.textContent = room.roomNumber;
+        roomNumberSelect.appendChild(option);
+      });
+    } else {
+      alert("Error fetching rooms");
+    }
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+})
+    </script>
+    
+    <script>
+
+  
+const bookingForm = document.getElementById("booking-form");
+const bookingBtn = document.getElementById("booking-btn");
+
+bookingBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const CheckIn = document.getElementById("Arrival Date").value;
+  const CheckOut = document.getElementById("Departure Date").value;
+  const numberOfRooms = document.getElementById("rooms").value;
+  const roomNumber = document.getElementById("roomNumber").value;
+  const fullName = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const roomPrice = document.getElementById("Room-Price").value;
+
+  const dataforRoomBook = {
+  roomPrice:roomPrice,
+  numberOfRooms:numberOfRooms,
+  roomNumber:roomNumber,
+  CheckIn: CheckIn,
+  CheckOut:CheckOut,
+   user: {
+    fullName: fullName,
+    email: email,
+ 
+  }
+}
+
+
+  
+
+  fetch("http://localhost:8080/api/v1/dashboardBookroom", {
+    method: "post",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(dataforRoomBook),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.status === 201) {
+        alert("Room booked successfully");
+        // Reset the form
+        bookingForm.reset();
+      } else {
+        alert("Error booking room");
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      alert("Error booking room");
+    });
+});
+    </script>
+  
+    <script src="js/7525-js-jquery-3.3.1.min.js"></script>
+    <script src="js/1982-js-bootstrap.min.js"></script>
+    <script src="js/1850-js-jquery.magnific-popup.min.js"></script>
+    <script src="js/4317-js-jquery-ui.min.js"></script>
+    <script src="js/2122-js-jquery.slicknav.js"></script>
+    <script src="js/4726-js-owl.carousel.min.js"></script>
+    <script src="js/9029-js-main.js"></script>
+  </body>
+</html>

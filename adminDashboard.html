@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Holy Shivana, Best Holiday resorts in Rishikesh, Resorts in Rishikesh, Hotel in Neelkanth Rishikesh Resorts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Holy Shivana Rishikesh</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-96x96.png">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+/>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adminDashboard.css" type="text/css">
+    <link rel="stylesheet" href="css/roomBooking.css" type="text/css">
+    <link rel="stylesheet" href="css/css-bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/css-flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/css-jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/css-slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/css-style.css" type="text/css">
+  </head>
+  <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+      <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+      <div class="canvas-close">
+        <i class="icon_close"></i>
+      </div>
+      <div class="search-icon  search-switch">
+        <i class="icon_search"></i>
+      </div>
+      <div class="header-configure-area">
+        <a href="#" class="bk-btn">Book Now</a>
+      </div>
+
+      <!-- for phone menu  -->
+      <nav class="mainmenu mobile-menu">
+        <ul>
+        
+          <li class="active" >
+            <a href="adminDashboard.html">Rooms</a>
+        </li>
+        <li>
+          <a href="adminHome.html">AdminHome</a>
+        </li>
+      
+     
+        </ul>
+      </nav>
+
+      <div id="mobile-menu-wrap"></div>
+      <ul class="top-widget">
+  
+    </div>
+    <header class="header-section">
+    
+      <div class="menu-item">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2">
+              <div class="logo" style="padding:0px !important">
+                <a href="adminHome.html">
+                  <img src="images/logo/The-2 (1).png" alt="" style="width: 85px">
+                </a>
+              </div>
+            </div>
+            <!-- for main manu -->
+            <div class="col-lg-10">
+              <div class="nav-menu">
+                <nav class="mainmenu">
+                  <ul>
+                   
+                    <li class="active">
+                      <a href="adminDashboard.html">Rooms</a>
+                    </li>
+                    <li>
+                      <a href="adminHome.html">Add Reservation</a>
+                    </li>
+                   
+                  </ul>
+                </nav>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+
+		</div></br> 
+    <section>
+      <h2 style="text-align: center;">Rooms</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Room Number</th>
+            <th>Type</th>
+            <th>Capacity</th>
+            <th>Price</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="rooms-table-body">
+        </tbody>
+      </table>
+    </section>
+    
+    <div id="edit-room-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <h5>Edit Room Price</h5>
+        <form>
+          <div>
+            <label for="edit-room-price">Price:</label>
+            <input type="text" id="edit-room-price" name="edit-room-price" required>
+          </div>
+          <button type="submit">Save</button>
+          <button type="button" class="close-btn"  id="close-btn" >Close</button>
+        </form>
+      </div>
+    </div>
+
+        
+
+
+          
+       <section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+        <div class="container" class="booking-form">
+          <p class="brand">Add  Room </p>
+          <div class="wrapper animated bounceInLeft">
+            <div class="company-info">
+              <h3>Holy Shivana</h3>
+              <ul>
+                <li><i class="fa fa-mobile"></i>(555)-555-5555</li>
+                <li><i class="fa fa-envelope"></i>test@email.com</li>
+              </ul>
+            </div>
+            <div class="contact">
+          
+              <form id ="booking-form" >
+                <p>
+                  <label>Room type</label>
+                  <select name="roomType" id="roomType" required>
+                    <option value="">-- Select Type--</option>
+                    <option value="1 Person">Executive Room</option>
+                   
+              
+                  </select>
+                </p>
+                <p>
+                  <label>Capacity</label>
+                  <select name="Capacity" id="Capacity" required>
+                    <option value="">-- Select Capacity--</option>
+                    <option value="1 Person">1 Person</option>
+                    <option value="2 Person">2 Person</option>
+              
+                  </select>
+              
+                </p>
+    
+                <p>
+                  <label>Room Number</label>
+                  <input type="text" id = "roomNumber" name="email" required >
+                </p>
+                <p>
+                  <label>Availability</label>
+                  <select name="Availability" id="Availability" required>
+                    <option value="">-- Select Availability--</option>
+                    <option value="Available">Available</option>
+                    <option value="Unavailable">Unavailable</option>
+              
+                  </select>
+                
+                </p>
+              
+    
+                <div class="check-date">
+                    <div style="position: relative;">
+                    <label for="Room Price" >Room-Price:</label>
+                    <input type="number"  id="Room-Price" required >
+                    <i style="position: absolute; right: 20px; bottom: 15px;">₹</i>
+                  
+                    </div>
+                    </div>
+                    <div class="check-date">
+                        <div style="position: relative;" >
+                    <label for="date-out">Room-Image:</label>
+                    <input type="file" id="img" name="filename" accept=".jpg,.png," required>
+                   
+                </div>
+                    </div>
+                
+                <p class="full">
+                  <button type = "button" id="booking-btn">Add Room</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+         
+        
+        </section>
+
+
+
+    </main>
+  
+<footer class="footer-section">
+  <div class="container">
+  <div class="footer-text">
+  <div class="row">
+  <div class="col-lg-4">
+  <div class="ft-about">
+  <div class="logo">
+  <a href="#">
+  <img src="images/logo/Footer-logo.png" alt="" style ="margin-top: -62px;">
+  </a>
+  </div>
+  <p>Make your Visit great !</p>
+  <div class="fa-social">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-tripadvisor"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube-play"></i></a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3 offset-lg-1">
+  <div class="ft-contact">
+  <h6>Contact Us</h6>
+  <ul>
+    <li><a href="tel:+917060293898"> +917060293898</a></li>
+  <a href="mailto:holyshivanarishikesh@gmail.com">holyshivanarishikesh@gmail.com</a>
+  <li>Tapovan,Rishikesh,Uttarakhand, India</li>
+   </ul>
+  </div>
+  </div>
+  <div class="col-lg-3 offset-lg-1">
+  <div class="ft-newslatter">
+  <h6>New latest</h6>
+  <p>Get the latest updates and offers.</p>
+  <form action="#" class="fn-form">
+  <input type="text" placeholder="Email">
+  <button type="submit"><i class="fa fa-send"></i></button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="copyright-option">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-7">
+  
+  </div>
+  <div class="col-lg-5">
+  <div class="co-text"><p>
+  Copyright &copy;<script data-cfasync="false" src="js/cloudflare-static-email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved Holy Shivana
+  </p></div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </footer>
+
+
+
+
+    <script src="js/verifyUser.js" > </script>
+
+
+
+
+
+<script>
+
+const roomTable = document.getElementById('room-table');
+
+fetch('http://localhost:8080/api/v1/getRooms')
+  .then((res) => res.json())
+  .then((data) => {
+      const roomData = data.rooms;
+      const tableBody = document.querySelector('#rooms-table-body');
+    
+      roomData.forEach((room) => {
+  const row = document.createElement('tr');
+
+  const roomNumberCell = document.createElement('td');
+  roomNumberCell.textContent = room.roomNumber;
+  row.appendChild(roomNumberCell);
+
+  const roomTypeCell = document.createElement('td');
+  roomTypeCell.textContent = room.roomType;
+  row.appendChild(roomTypeCell);
+
+  const capacityCell = document.createElement('td');
+  capacityCell.textContent = room.capacity;
+  row.appendChild(capacityCell);
+
+  const roomPriceCell = document.createElement('td');
+roomPriceCell.textContent = room.roomPrice;
+row.appendChild(roomPriceCell);
+
+const actionsCell = document.createElement('td');
+actionsCell.classList.add('actions');
+  const editLink = document.createElement('a');
+  editLink.href = '#';
+  editLink.textContent = 'Edit';
+  actionsCell.appendChild(editLink);
+
+
+  editLink.addEventListener('click', () => {
+  const editRoomModal = document.querySelector('#edit-room-modal');
+  const close = document.querySelector('#close');
+  const editRoomPriceInput = document.querySelector('#edit-room-price');
+  const modelClose = document.querySelector('#close-btn');
+  
+  // Get the current room price from the row data
+  const roomPrice = room.roomPrice;
+  
+  // Populate the price input with the current room price
+  editRoomPriceInput.value = roomPrice;
+  
+  // Show the edit room modal
+  editRoomModal.style.display = 'block';
+
+  // Close the modal when the user clicks the close button
+  close.addEventListener('click', () => {
+    editRoomModal.style.display = 'none';
+  });
+  
+  modelClose.addEventListener('click', () => {
+    editRoomModal.style.display = 'none';
+  });
+  // Send a PUT request to update the room price when the form is submitted
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const roomId = room._id; // Assuming that the room ID is stored in the '_id' property of the room object
+    const newPrice = editRoomPriceInput.value;
+    fetch(`http://localhost:8080/api/v1/priceUpdate/${roomId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ roomPrice: newPrice })
+    })
+    .then(response => {
+      console.log(response)
+      if (response.ok) {
+        // Update the room price in the table
+        editRoomModal.style.display = 'none';
+        roomPriceCell.textContent = newPrice;
+        alert('Room price updated!');
+      } else {
+        throw new Error(`Failed to update room price for room with ID ${roomId}`);
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert('Failed to update room price!');
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+  
+
+  const deleteLink = document.createElement('a');
+  deleteLink.href = '#';
+  deleteLink.textContent = 'Delete';
+  actionsCell.appendChild(deleteLink);
+  deleteLink.addEventListener('click', () => {
+  if (confirm('Are you sure you want to delete this room?')) {
+    const roomId = room._id // Assuming that the room ID is stored in the 'id' property of the room object
+    fetch(`http://localhost:8080/api/v1/roomDelete/${roomId}`, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (response.ok) {
+        row.remove();
+        alert('Room deleted!');
+      } else {
+        throw new Error(`Failed to delete room with ID ${roomId}`);
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert('Failed to delete room!');
+    });
+  }
+});
+
+  row.appendChild(actionsCell);
+
+  tableBody.appendChild(row);
+});
+  })
+
+</script>
+
+
+  
+    <script src="js/7525-js-jquery-3.3.1.min.js"></script>
+    <script src="js/1982-js-bootstrap.min.js"></script>
+    <script src="js/1850-js-jquery.magnific-popup.min.js"></script>
+    <script src="js/4317-js-jquery-ui.min.js"></script>
+    <script src="js/2122-js-jquery.slicknav.js"></script>
+    <script src="js/4726-js-owl.carousel.min.js"></script>
+    <script src="js/9029-js-main.js"></script>
+
+    
+    <script>
+
+
+      $("#booking-btn").click(function(e){
+       e.preventDefault()
+       const roomType = document.getElementById('roomType').value
+ const capacityField = document.getElementById('Capacity').value
+ const roomNumberField = document.getElementById('roomNumber').value
+ const availabilityField = document.getElementById('Availability').value
+ const roomPriceField = document.getElementById('Room-Price').value
+ const roomImageField = document.getElementById('img').files[0]
+ 
+ 
+ 
+ const formData = new FormData();
+ formData.append("roomType",roomType)
+ formData.append("capacity",capacityField)
+ formData.append("roomNumber",roomNumberField)
+ formData.append("availability",availabilityField)
+ formData.append("Price",roomPriceField)
+ formData.append("Image",roomImageField)
+ 
+ 
+ 
+ const endpoint = "http://localhost:8080/api/v1/AddRoom";
+ 
+ 
+ fetch(endpoint, {
+          method: "post",
+  
+          body: formData,
+        }).then((response) => response.json()).then((data) => {
+      console.log(data)
+ 
+        if(data.status == 201){
+         alert("room added")
+         const roomData = data.rooms;
+      const tableBody = document.querySelector('#rooms-table-body');
+    
+      roomData.forEach((room) => {
+  const row = document.createElement('tr');
+
+  const roomNumberCell = document.createElement('td');
+  roomNumberCell.textContent = room.roomNumber;
+  row.appendChild(roomNumberCell);
+
+  const roomTypeCell = document.createElement('td');
+  roomTypeCell.textContent = room.roomType;
+  row.appendChild(roomTypeCell);
+
+  const capacityCell = document.createElement('td');
+  capacityCell.textContent = room.capacity;
+  row.appendChild(capacityCell);
+
+  const availabilityCell = document.createElement('td');
+  availabilityCell.textContent = room.availability;
+  row.appendChild(availabilityCell);
+
+  const actionsCell = document.createElement('td');
+  const editLink = document.createElement('a');
+  editLink.href = '#';
+  editLink.textContent = 'Edit';
+  actionsCell.appendChild(editLink);
+
+  const deleteLink = document.createElement('a');
+  deleteLink.href = '#';
+  deleteLink.textContent = 'Delete';
+  actionsCell.appendChild(deleteLink);
+
+  row.appendChild(actionsCell);
+
+  tableBody.appendChild(row);
+});
+        }
+
+        function deleteRoom(roomNumber, row) {
+  fetch(`http://localhost:8080/api/v1/${roomNumber}`, {
+    method: 'DELETE'
+  })
+  .then(response => {
+    if (response.status === 204) {
+      row.remove();
+    } else {
+      alert('Error deleting room');
+    }
+  })
+  .catch(error => {
+    console.error('Error deleting room:', error);
+  });
+}
+    
+        })
+      }) 
+       
+ 
+      
+        
+ 
+    
+ 
+     </script>
+  </body>
+</html>

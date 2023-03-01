@@ -1,0 +1,25 @@
+#booking-table {
+    width: 100%; /* Set the table to take up the full width of its container */
+    border-collapse: collapse; /* Remove the default spacing between table cells */
+  }
+  
+  #booking-table th, #booking-table td {
+    padding: 8px; /* Add some padding to the table cells */
+    border: 1px solid #ccc; /* Add a border to the table cells */
+    text-align: left; /* Align the text in the table cells to the left */
+  }
+  
+  @media (max-width: 600px) { /* Media query for devices with a maximum width of 600px */
+    #booking-table {
+      font-size: 12px; /* Reduce the font size for smaller screens */
+    }
+    
+    #booking-table th, #booking-table td {
+      padding: 4px; /* Reduce the padding for smaller screens */
+    }
+  }
+  #center-text {
+    text-align: center;
+  }
+  
+  

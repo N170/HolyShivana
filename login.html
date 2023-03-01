@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Holy Shivana</title>
+<link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+<body>
+
+    <h1>Login</h1>
+    <form>
+      <div class="row">
+        <label for="email">Email</label>
+        <input type="email" name="email" autocomplete="off" placeholder="email@example.com" required >
+      </div>
+      <div class="row">
+        <label for="password">Password</label>
+        <input type="password" name="password"  required  >
+      </div>
+      <button type="submit">Login</button>
+      <div id="error-message" style="text-align: center;  color: red;"></div>
+    </form>
+<script>
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = form.elements.email.value;
+  const password = form.elements.password.value;
+
+  fetch('http://localhost:8080/api/v1/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, password }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+    
+      if (data.status === 201) {
+    
+      localStorage.setItem('token', data.token);
+      window.location.href = '/adminDashboard.html';
+    }else{
+      const errorMessageElement = document.getElementById('error-message');
+    errorMessageElement.textContent = data.error;
+    }
+    })
+    .catch((error) => {
+     console.log(error)
+      console.error(error);
+    });
+});
+
+
+
+</script>
+</body>
+</html>
