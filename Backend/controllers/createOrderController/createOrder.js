@@ -4,8 +4,8 @@ const Razorpay =  require("razorpay")
 const { Room } = require("../../models/RoombookModel")
 
 var instance = new Razorpay({
-    key_id: process.env.KEY_ID,
-    key_secret: process.env.KEY_SECRET,
+    key_id: 'rzp_test_oooNJ6WEjLoDKB',
+    key_secret: 'vVIYo9UT9de7yf4bl69yxFCm',
   });
 
   exports.createOrder = async (req, res) => {
